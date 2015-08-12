@@ -1,0 +1,15 @@
+package arman;
+import java.util.Random;
+public class Frequency {
+      public static void main(String[] args){
+    	  int frequency[] = new int[7];
+    	  Random dice = new Random();
+    	  for(int roll=1;roll<1000;roll++){
+    		  ++frequency[1+dice.nextInt(6)];
+    	  }
+    	  System.out.println("Face\tFrequency");
+    	  for(int i=1;i<frequency.length;i++){
+    		  System.out.println(i+"\t"+frequency[i]);
+    	  }
+      }
+}

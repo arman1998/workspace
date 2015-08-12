@@ -1,0 +1,13 @@
+package arman;
+public class CardDeckTest{
+    public static void main(String[] args){
+         CardDeck myDeckOfCards = new CardDeck();
+         myDeckOfCards.shuffle(); 
+         for (int i = 1; i <= 52; i++){
+               System.out.printf("%-19s", myDeckOfCards.dealCard());
+
+               if (i % 4 == 0) // output a newline after every fourth card
+                   System.out.println();
+         }
+    }
+}
